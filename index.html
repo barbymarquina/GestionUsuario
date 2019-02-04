@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Gestion de usuario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="js/tabla.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <form id="nuevoEmpleado">
+                    <div class="form-group">
+                        <label for="nombreNuevoEmpleado">Nombre del empleado</label>
+                        <input type="text" class="form-control" id="nombreNuevoEmpleado">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="edadNuevoEmpleado">Edad del empleado</label>
+                        <input type="text" class="form-control" id="edadNuevoEmpleado">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sueldoNuevoEmpleado">Sueldo del empleado</label>
+                        <input type="text" class="form-control" id="sueldoNuevoEmpleado">
+                    </div>
+                    <input type="submit" value="Añadir empleado"/>
+                </form>
+
+            </div>
+            <div class="col-sm-6">
+                <div id="empleados">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Nombre del Empleado</th>
+                                <th>Edad</th>
+                                <th>Sueldo</th>
+                            </tr>
+                        </thead>
+                        <tbody id="nuevosEmpleados">
+
+                        </tbody>
+                    </table>
+                </div>
+                <button id="actualizar">Actualizar Datos </button>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
